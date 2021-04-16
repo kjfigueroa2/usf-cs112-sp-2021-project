@@ -5,19 +5,19 @@ public class DataPoint {
 	//instance variables
 	public Double f1;
 	public Double f2;
-	public String label;
+	public int label;
 	public boolean isTest;
 	
 	//no arg constructor
 	public DataPoint() {
 		this.f1 = 0.0;
 		this.f2 = 0.0;
-		this.label = "";
+		this.label = 0;
 		this.isTest = false;
 	}
 	
 	//4 arg constructor
-	public DataPoint(Double f1, Double f2, String label, Boolean isTest) {
+	public DataPoint(Double f1, Double f2, int label, Boolean isTest) {
 		this.f1 = f1;
 		this.f2 = f2;
 		this.label = label;
@@ -33,7 +33,7 @@ public class DataPoint {
 		return this.f2;
 	}
 	
-	public String getLabel() {
+	public int getLabel() {
 		return this.label;
 	}
 	
@@ -50,7 +50,7 @@ public class DataPoint {
 		this.f2 = val;
 	}
 	
-	public void setLabel(String label) {
+	public void setLabel(int label) {
 		this.label = label;
 	}
 	

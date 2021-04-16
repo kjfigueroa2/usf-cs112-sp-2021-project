@@ -21,13 +21,13 @@ public class DummyPredictor extends Predictor {
 		}
 		
 		@Override
-		public Double getAccuracy(ArrayList<DataPoint> data) {
+		public double getAccuracy(ArrayList<DataPoint> data) {
 			System.out.println("Testing accuracy.");
 			return 50.00;
 		}
 		
 		@Override
-		public Double getPrecision(ArrayList<DataPoint> data) {
+		public double getPrecision(ArrayList<DataPoint> data) {
 			System.out.println("Testing precision.");
 			return 50.00;
 		}
